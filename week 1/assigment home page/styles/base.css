@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #2c6e91;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+header span {
+    display: block;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
