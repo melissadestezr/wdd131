@@ -2,12 +2,25 @@
     --primary-color: #2c6e91;
     --secondary-color: #f4f4f4;
     --text-color: #333;
+    --max-width: 960px;
+    --border-radius: 10px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     background-color: var(--secondary-color);
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 0;
 }
 
 header span {
@@ -15,10 +28,99 @@ header span {
     text-align: center;
 }
 
+#course-title {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 1.2rem 1rem 1rem;
+  color: var(--secondary-color);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  flex: 1;
+}
+
+main h1 {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+
 nav ul {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
     list-style: none;
-    padding: 0;
+    padding: 0.6rem 1rem;
+    margin: 0;
+    background-color: #1a3a4a;
 }
+
+nav ul a {
+    color: #cfe0eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+nav ul a:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #96cdeb;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.card h2 {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.about-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1.2rem 1rem;
+  font-size: 0.88rem;
+  margin-top: 2rem;
+}
+    

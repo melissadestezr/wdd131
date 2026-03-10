@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -31,23 +32,34 @@
     </header>
     <main>
         <h1>Melissa Destez</h1>
-        <section class="card">
-            <h2>About Me</h2>
-            <img src="images/profile.jpeg" alt="My profile photo">
-            <p>
-                I am a software development student learning HTML, CSS, and web design.
-            </p>
-        </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-            <li><a href="#"></a>a</li>
-            <li><a href="#"></a>a</li>
-            <li><a href="#"></a>a</li>
-            <li><a href="#"></a>a</li>
-        </section>
+        <div class="cards-grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="images/profile.jpeg" alt="My profile photo" class="profile-photo">
+                    <p>
+                        Hi! My name is Melissa and I'm from São Paulo, Brazil. I like technology, design, and creating beautiful digital experiences. I'm currently studying Web Development and excited to grow my skills in HTML, CSS, and JavaScript. In my free time, I enjoy reading, playing video games, and learning new things.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+                    <li><a href="https://www.theodinproject.com" target="_blank">The Odin Project</a></li>
+                    <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://coolors.co" target="_blank">Coolors</a></li>
+                    <li><a href="https://flexboxfroggy.com" target="_blank">Flexbox Froggy</a></li>
+                    <li><a href="https://codepen.io" target="_blank">CodePen</a></li>
+                    <li><a href="https://caniuse.com" target="_blank">Can I Use</a></li>
+                    <li><a href="https://www.awwwards.com" target="_blank">Awwwards</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
-        <p><span id="currentyear">©2026</span> Melissa Destez SP - Brazil</p>
+        <p>©<span id="currentyear"></span> ⭐ Melissa Destez ⭐ São Paulo, Brazil </p>
         <p id="lastModified"></p>
     </footer>
 </body>
