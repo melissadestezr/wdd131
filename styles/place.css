@@ -28,8 +28,11 @@
 body {
     font-family: var(--font-body);
     color: var(--color-text);
-    background-color: #111;
+    background-color: var(--color-green);
     line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
  
 img {
@@ -56,8 +59,7 @@ header h1 {
     position: relative;
     width: 100%;
 }
- 
-.hero picture,
+
 .hero img {
     width: 100%;
     height: auto;
@@ -107,18 +109,31 @@ header h1 {
     font-size: 0.9rem;
 }
  
-/* Mobile layout *S/
-.card-data,
-.card-weather {
-    margin: var(--spacing-md);
+/* Mobile layout */
+.card h2 {
+    background-color: transparent;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-sm);
+    justify-content: center;
 }
-/* Emoji */
+ 
+.card table tr {
+    justify-content: center;
+}
+
 .weather-emoji {
     display: none;
 }
  
 .weather-svg {
-    display: inline-block;
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin: var(--spacing-md) auto;
 }
 
 @media (min-width: 768px) {
