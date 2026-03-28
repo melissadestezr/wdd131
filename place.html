@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brazil - A Tropical Paradise</title>
+        <meta name="author" content="Melissa Destez">
     <meta name="description" content="Discover Brazil, the largest country in South America, known for its Amazon rainforest, beautiful beaches, and vibrant culture.">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
@@ -37,72 +38,77 @@
                     height="600"
                 >
             </picture>
-            <div class="hero-overlay">
-                <h2>Land of Diversity</h2>
-                <p>The largest country in South America</p>
-            </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <h2>About Brazil</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3>Capital</h3>
-                    <p>Brasília</p>
-                </div>
-                <div class="about-card">
-                    <h3>Language</h3>
-                    <p>Portuguese</p>
-                </div>
-                <div class="about-card">
-                    <h3>Population</h3>
-                    <p>~215 million</p>
-                </div>
-                <div class="about-card">
-                    <h3>Currency</h3>
-                    <p>Brazilian Real (BRL)</p>
-                </div>
+                    <div class="card card-data">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>8,510,346 sq km</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>215,313,498</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Brasília</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>Portuguese</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Brazilian Real</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>UTC-3</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+55</td>
+                    </tr>
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.br</td>
+                    </tr>
+                </table>
             </div>
-            <p class="about-description">
-                Brazil is a country of extraordinary beauty and diversity. Home to the
-                Amazon Rainforest — the world's largest tropical rainforest — as well as
-                iconic landmarks like Christ the Redeemer in Rio de Janeiro and the
-                stunning Iguazu Falls. Brazil is also known for its vibrant culture,
-                samba music, and world-famous Carnival celebration.
-            </p>
-        </section>
- 
-        <!-- Weather Section -->
-        <section id="weather" class="weather">
-            <h2>Weather <span class="weather-icon-large">⛅</span></h2>
-            <div class="weather-grid">
-                <div class="weather-item">
-                    <h3>Location</h3>
-                    <p>Rio de Janeiro</p>
-                </div>
-                <div class="weather-item">
-                    <h3>Temperature</h3>
-                    <p>28 °C</p>
-                </div>
-                <div class="weather-item">
-                    <h3>Wind Speed</h3>
-                    <p>14 km/h</p>
-                </div>
-                <div class="weather-item">
-                    <h3>Conditions</h3>
-                    <div class="weather-icon-mobile">
-                        <img src="images/partly-cloudy.svg" alt="Partly cloudy weather icon" width="48" height="48">
-                    </div>
-                    <p>Partly Cloudy</p>
-                </div>
-                <div class="weather-item wind-chill">
-                    <h3>Wind Chill</h3>
-                    <p id="wind-chill-value">Calculating...</p>
-                </div>
+
+                        <div class="card card-weather">
+                <h2>
+                    Weather
+                    <span class="weather-emoji">⛅</span>
+                    <img
+                        class="weather-svg"
+                        src="images/partly-cloudy.svg"
+                        alt="Partly cloudy"
+                        width="36"
+                        height="36"
+                    >
+                </h2>
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td>28 °C</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Partly Cloudy</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td>14 km/h</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="wind-chill-value">Calculating...</td>
+                    </tr>
+                </table>
             </div>
-        </section>
- 
     </main>
  
     <footer>
