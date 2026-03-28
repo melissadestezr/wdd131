@@ -63,7 +63,6 @@ header h1 {
     height: auto;
     display: block;
 }
-
 .card {
     background-color: var(--color-card-bg);
     border-radius: var(--border-radius);
