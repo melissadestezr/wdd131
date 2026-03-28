@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil - A Tropical Paradise</title>
+    <meta name="description" content="Discover Brazil, the largest country in South America, known for its Amazon rainforest, beautiful beaches, and vibrant culture.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+ 
+    <header>
+        <h1>Brazil</h1>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Weather</a>
+            <a href="#">Gallery</a>
+        </nav>
+    </header>
+ 
+    <main>
+ 
+        <section class="hero">
+            <picture>
+                <source
+                    media="(min-width: 768px)"
+                    srcset="images/brazil-large.webp"
+                >
+                <img
+                    src="images/brazil-small.webp"
+                    srcset="images/brazil-small.webp 480w, images/brazil-large.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 100vw"
+                    alt="Aerial view of Rio de Janeiro with Christ the Redeemer and Sugarloaf Mountain"
+                    loading="eager"
+                    width="1200"
+                    height="600"
+                >
+            </picture>
+            <div class="hero-overlay">
+                <h2>Land of Diversity</h2>
+                <p>The largest country in South America</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Brazil</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Capital</h3>
+                    <p>Brasília</p>
+                </div>
+                <div class="about-card">
+                    <h3>Language</h3>
+                    <p>Portuguese</p>
+                </div>
+                <div class="about-card">
+                    <h3>Population</h3>
+                    <p>~215 million</p>
+                </div>
+                <div class="about-card">
+                    <h3>Currency</h3>
+                    <p>Brazilian Real (BRL)</p>
+                </div>
+            </div>
+            <p class="about-description">
+                Brazil is a country of extraordinary beauty and diversity. Home to the
+                Amazon Rainforest — the world's largest tropical rainforest — as well as
+                iconic landmarks like Christ the Redeemer in Rio de Janeiro and the
+                stunning Iguazu Falls. Brazil is also known for its vibrant culture,
+                samba music, and world-famous Carnival celebration.
+            </p>
+        </section>
+ 
+        <!-- Weather Section -->
+        <section id="weather" class="weather">
+            <h2>Weather <span class="weather-icon-large">⛅</span></h2>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <h3>Location</h3>
+                    <p>Rio de Janeiro</p>
+                </div>
+                <div class="weather-item">
+                    <h3>Temperature</h3>
+                    <p>28 °C</p>
+                </div>
+                <div class="weather-item">
+                    <h3>Wind Speed</h3>
+                    <p>14 km/h</p>
+                </div>
+                <div class="weather-item">
+                    <h3>Conditions</h3>
+                    <div class="weather-icon-mobile">
+                        <img src="images/partly-cloudy.svg" alt="Partly cloudy weather icon" width="48" height="48">
+                    </div>
+                    <p>Partly Cloudy</p>
+                </div>
+                <div class="weather-item wind-chill">
+                    <h3>Wind Chill</h3>
+                    <p id="wind-chill-value">Calculating...</p>
+                </div>
+            </div>
+        </section>
+ 
+    </main>
+ 
+    <footer>
+        <p>&copy; ⭐ Melissa Destez ⭐ São Paulo, Brazil <span id="current-year"></span></p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+ 
+</body>
+</html>
