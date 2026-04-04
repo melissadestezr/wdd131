@@ -1,0 +1,223 @@
+:root {
+    --color-primary: #1a0a3c;
+    --color-accent: #c9a84c;
+    --color-accent-light: #e8c97a;
+    --color-bg: #f5f0e8;
+    --color-text: #1a0a3c;
+    --color-caption: #6b4c9a;
+    --color-footer-bg: #1a0a3c;
+    --color-footer-text: #e8d9b0;
+    --color-header-text: #ffffff;
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Lato', sans-serif;
+    --max-width: 1100px;
+    --shadow: 0 4px 18px rgba(26,10,60,0.13);
+}
+
+ *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+ 
+header {
+    background-color: var(--color-primary);
+    color: var(--color-header-text);
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    border-bottom: 3px solid var(--color-accent);
+}
+ 
+.site-title {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--color-header-text);
+}
+ 
+#hamburger {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    background: none;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    display: block;
+    transition: background 0.2s;
+    z-index: 10;
+}
+ 
+#hamburger:hover {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+ 
+nav {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+ 
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.3rem 0;
+}
+ 
+nav ul.open {
+    display: flex;
+}
+ 
+nav ul li a {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    color: var(--color-header-text);
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    letter-spacing: 0.08em;
+    transition: color 0.2s, background 0.2s;
+    border-radius: 3px;
+}
+ 
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--color-accent);
+    background-color: rgba(201, 168, 76, 0.1);
+}
+ 
+main {
+    flex: 1;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2rem;
+}
+ 
+h1 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    letter-spacing: 0.05em;
+    position: relative;
+}
+ 
+h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--color-accent);
+    margin: 0.4rem auto 0;
+    border-radius: 2px;
+}
+ 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+ 
+figure {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+ 
+figure:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 32px rgba(26,10,60,0.18);
+}
+ 
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+ 
+figcaption {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--color-caption);
+    text-align: center;
+    padding: 0.6rem 0.5rem 0.7rem;
+    letter-spacing: 0.02em;
+}
+ 
+figure.hidden {
+    display: none;
+}
+ 
+
+footer {
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    text-align: center;
+    padding: 1rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    border-top: 3px solid var(--color-accent);
+    line-height: 1.8;
+}
+ 
+footer p {
+    margin: 0;
+}
+
+figcaption h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+
+figcaption p {
+    font-style: normal;
+    font-size: 0.82rem;
+    color: var(--color-text);
+    text-align: left;
+    padding: 0 0.8rem;
+    line-height: 1.6;
+}
+
+figcaption p span {
+    font-weight: 700;
+    color: var(--color-caption);
+}
+
+figcaption {
+    padding: 0.8rem 0.5rem 1rem;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--color-caption);
+    font-style: italic;
+    padding: 2rem;
+}
