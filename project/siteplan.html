@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cats World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="siteplan.css" />
+</head>
+<body>
+ 
+  <!-- Header -->
+  <header>
+    <!-- Logo -->
+    <div class="logo" aria-label="Cats World logo">
+      <svg width="90" height="90" viewBox="230 78 220 220" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="340" cy="188" r="110" fill="#D97B4A"/>
+        <polygon points="278,100 318,90 262,42" fill="#D97B4A"/>
+        <polygon points="402,100 362,90 418,42" fill="#D97B4A"/>
+        <path d="M340,192 C337,187 328,187 328,195 C328,201 340,210 340,210 C340,210 352,201 352,195 C352,187 343,187 340,192Z" fill="#C4623A"/>
+        <line x1="196" y1="194" x2="322" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="192" y1="210" x2="322" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="484" y1="194" x2="358" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="488" y1="210" x2="358" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <!-- Title -->
+    <h1>Cats World</h1>
+    <p>Website Planning Document — WDD131 Project</p>
+  </header>
+ 
+  <!-- Navigation  -->
+  <nav aria-label="Site plan sections">
+    <a href="#site-name">Site Name</a>
+    <a href="#purpose">Purpose</a>
+    <a href="#scenarios">Scenarios</a>
+    <a href="#colors">Colors</a>
+    <a href="#typography">Typography</a>
+    <a href="#wireframes">Wireframes</a>
+  </nav>
+ 
+  <main class="container">
+ 
+    <!-- 1. Site Name -->
+    <section id="site-name">
+      <span class="section-number">01</span>
+      <h2>Site Name</h2>
+ 
+      <div class="card">
+        <h3>Cats World</h3>
+        <p>
+          <strong>Cats World</strong> was chosen because it is short, memorable, and inclusive, it suggests a complete universe dedicated to cats rather than a single narrow topic. The name works well for both: casual visitors who love cats and people actively looking for breed or care information.
+        </p>
+        <p class="note">Optional domain availability: cats-world.info or catsworld.pet</p>
+      </div>
+    </section>
+ 
+    <!-- 2. Purpose -->
+    <section id="purpose">
+      <span class="section-number">02</span>
+      <h2>Site Purpose</h2>
+ 
+      <p>
+        Cats World is a three-page informational website that celebrates cat culture and helps visitors learn about different breeds and how to care for their pets. The site provides:
+      </p>
+ 
+      <div class="card">
+        <h3>Home Page</h3>
+        <p>
+          Cat curiosities and dynamically generated fun facts powered by JavaScript. The page serves as an engaging entry point with rotating facts and visual appeal to encourage exploration.
+        </p>
+      </div>
+ 
+      <div class="card">
+        <h3>Breeds Catalog Page</h3>
+        <p>
+          A filterable catalog of cat breeds displaying key characteristics such as size, temperament, coat type, and origin. A JavaScript-powered filter system and a favorites list saved to <code>localStorage</code> allow users to bookmark and revisit breeds they love.
+        </p>
+      </div>
+ 
+      <div class="card">
+        <h3>Contact Page</h3>
+        <p>
+          A form that lets visitors submit a photo of their own cat or send questions. This builds community
+          and encourages user participation.
+        </p>
+      </div>
+    </section>
+ 
+    <!-- 3. Scenarios -->
+    <section id="scenarios">
+      <span class="section-number">03</span>
+      <h2>Scenarios</h2>
+      <p>
+        These are real questions a target visitor, a cat lover or a prospective cat owner might have when arriving at the site:
+      </p>
+ 
+      <ul class="scenario-list">
+        <li>Which cat breed is best for a small apartment and someone who works long hours?</li>
+        <li>What is a fun or surprising fact about cats that I can share with my friends?</li>
+        <li>How do I know if a Persian cat is the right breed for my lifestyle?</li>
+        <li>Can I submit a photo of my cat to be featured on the website?</li>
+        <li>What are the grooming needs of a Maine Coon compared to a Siamese?</li>
+      </ul>
+    </section>
+ 
+    <!-- 4. Color Schema -->
+    <section id="colors">
+      <span class="section-number">04</span>
+      <h2>Color Schema</h2>
+      <p>
+        The palette draws from warm earthy tones — burnt sienna, deep brown, and cream — evoking a cozy,
+        natural feeling that complements cat photography. A soft sage green adds a calm accent.
+      </p>
+ 
+      <div class="color-grid">
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#D97B4A;"></div>
+          <div class="swatch-info">
+            <strong>Primary</strong>
+            <span>Headings, buttons, links, highlights</span>
+            <code>#D97B4A</code>
+          </div>
+        </div>
+ 
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#5C3D2E;"></div>
+          <div class="swatch-info">
+            <strong>Secondary</strong>
+            <span>Navigation bar, footer, strong text</span>
+            <code>#5C3D2E</code>
+          </div>
+        </div>
+ 
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#FDF6EE; border-bottom:1px solid #E8D8CC;"></div>
+          <div class="swatch-info">
+            <strong>Background</strong>
+            <span>Page background, card base</span>
+            <code>#FDF6EE</code>
+          </div>
+        </div>
+ 
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#A8C5A0;"></div>
+          <div class="swatch-info">
+            <strong>Accent</strong>
+            <span>Badges, borders, subtle highlights</span>
+            <code>#A8C5A0</code>
+          </div>
+        </div>
+ 
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#2E1F16;"></div>
+          <div class="swatch-info">
+            <strong>Body Text</strong>
+            <span>Paragraphs, labels, icons</span>
+            <code>#2E1F16</code>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- 5. Typography -->
+    <section id="typography">
+      <span class="section-number">05</span>
+      <h2>Typography</h2>
+      <p>Two complementary fonts are used: a refined serif for display and a clean humanist sans-serif for readability.</p>
+ 
+      <div class="type-sample">
+        <p class="type-label">Font 1 —> Playfair Display · Used for: H1, H2, H3, featured quotes</p>
+        <p style="font-family:'Playfair Display',Georgia,serif; font-size:2rem; font-weight:600; color:var(--secondary); line-height:1.2;">
+          Discover the World of Cats
+        </p>
+        <p style="font-family:'Playfair Display',Georgia,serif; font-size:1.4rem; font-style:italic; color:var(--primary); margin-top:0.5rem;">
+          "Elegant, mysterious, and endlessly fascinating."
+        </p>
+      </div>
+ 
+      <div class="type-sample">
+        <p class="type-label">Font 2 —> Lato · Used for: body copy, navigation, labels, form elements</p>
+        <p style="font-family:'Lato',sans-serif; font-size:1rem; font-weight:400; color:var(--text); line-height:1.75;">
+          The Maine Coon is one of the largest domesticated cat breeds. It has a distinctive physical appearance
+          and valuable hunting skills. It is one of the oldest natural breeds in North America.
+        </p>
+        <p style="font-family:'Lato',sans-serif; font-size:0.85rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--primary); margin-top:0.75rem;">
+          Navigation Link · Button Label · Category Badge
+        </p>
+      </div>
+    </section>
+ 
+    <!-- 6. Wireframes -->
+    <section id="wireframes">
+      <span class="section-number">06</span>
+      <h2>Wireframes</h2>
+      <p>
+        Low-fidelity wireframes for the <strong>Home Page</strong> in both mobile (narrow) and desktop (wide)
+        views. Content blocks are represented as shaded regions; actual images and text will replace them in
+        the final build.
+      </p>
+ 
+      <div class="wireframe-grid">
+ 
+        <!-- Mobile wireframe -->
+        <div>
+          <p class="wireframe-label">📱 Mobile</p>
+          <div class="wf-phone">
+            <div class="wf-nav">
+              <div class="wf-nav-logo"></div>
+              <div class="wf-nav-links">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="wf-hero">
+              <div class="wf-hero-title"></div>
+              <div class="wf-hero-sub"></div>
+              <div class="wf-btn"></div>
+            </div>
+            <div class="wf-section">
+              <div class="wf-section-title"></div>
+              <div class="wf-fact-box">
+                <div class="wf-line" style="width:90%"></div>
+                <div class="wf-line" style="width:75%"></div>
+                <div class="wf-line" style="width:60%"></div>
+              </div>
+            </div>
+            <div class="wf-section" style="padding-top:0">
+              <div class="wf-section-title"></div>
+              <div class="wf-cards-row cols-1" style="gap:8px">
+                <div class="wf-card-item">
+                  <div class="wf-card-img"></div>
+                  <div class="wf-card-body">
+                    <div class="wf-line" style="width:60%;height:7px;opacity:0.3"></div>
+                    <div class="wf-line" style="width:80%"></div>
+                  </div>
+                </div>
+                <div class="wf-card-item">
+                  <div class="wf-card-img"></div>
+                  <div class="wf-card-body">
+                    <div class="wf-line" style="width:60%;height:7px;opacity:0.3"></div>
+                    <div class="wf-line" style="width:80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="background:var(--secondary);padding:0.6rem;text-align:center;">
+              <div style="width:50%;height:6px;background:rgba(255,255,255,0.25);border-radius:3px;margin:0 auto;"></div>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Desktop wireframe -->
+        <div>
+          <p class="wireframe-label">🖥 Desktop</p>
+          <div class="wf-desktop">
+            <div class="wf-nav">
+              <div class="wf-nav-logo" style="width:60px;"></div>
+              <div class="wf-nav-links">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="wf-hero" style="padding:2rem; text-align:left; display:flex; align-items:center; gap:1.5rem;">
+              <div style="flex:1;">
+                <div class="wf-hero-title" style="width:70%;margin:0 0 10px;"></div>
+                <div class="wf-hero-sub" style="width:90%;margin:0 0 14px;"></div>
+                <div class="wf-hero-sub" style="width:65%;margin:0 0 14px;"></div>
+                <div class="wf-btn" style="width:90px;"></div>
+              </div>
+              <div style="width:160px;height:100px;background:#E0D5CC;border-radius:8px;flex-shrink:0;"></div>
+            </div>
+            <div class="wf-section">
+              <div class="wf-section-title" style="width:25%"></div>
+              <div class="wf-fact-box" style="display:flex;align-items:center;gap:1rem;">
+                <div style="flex:1;">
+                  <div class="wf-line" style="width:95%"></div>
+                  <div class="wf-line" style="width:80%"></div>
+                </div>
+                <div style="width:60px;height:36px;background:var(--accent);border-radius:6px;opacity:0.5;flex-shrink:0;"></div>
+              </div>
+            </div>
+            <div class="wf-section" style="padding-top:0">
+              <div class="wf-section-title" style="width:25%"></div>
+              <div class="wf-cards-row cols-3">
+                <div class="wf-card-item">
+                  <div class="wf-card-img"></div>
+                  <div class="wf-card-body">
+                    <div class="wf-line" style="width:60%;height:7px;opacity:0.3"></div>
+                    <div class="wf-line" style="width:90%"></div>
+                    <div class="wf-line" style="width:70%"></div>
+                  </div>
+                </div>
+                <div class="wf-card-item">
+                  <div class="wf-card-img"></div>
+                  <div class="wf-card-body">
+                    <div class="wf-line" style="width:60%;height:7px;opacity:0.3"></div>
+                    <div class="wf-line" style="width:90%"></div>
+                    <div class="wf-line" style="width:70%"></div>
+                  </div>
+                </div>
+                <div class="wf-card-item">
+                  <div class="wf-card-img"></div>
+                  <div class="wf-card-body">
+                    <div class="wf-line" style="width:60%;height:7px;opacity:0.3"></div>
+                    <div class="wf-line" style="width:90%"></div>
+                    <div class="wf-line" style="width:70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="background:var(--secondary);padding:0.75rem 1.25rem;display:flex;justify-content:space-between;align-items:center;">
+              <div style="width:60px;height:6px;background:rgba(255,255,255,0.25);border-radius:3px;"></div>
+              <div style="display:flex;gap:10px;">
+                <div style="width:40px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px;"></div>
+                <div style="width:40px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px;"></div>
+                <div style="width:40px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- Footer -->
+  <footer>
+    <p><strong>Cats World</strong> — WDD131 Site Plan Document</p>
+    <p style="margin-top:0.25rem; font-size:0.8rem;">Subject: Cats Informational Website · Three-page project</p>
+  </footer>
+ 
+</body>
+</html>
