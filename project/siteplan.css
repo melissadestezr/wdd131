@@ -12,7 +12,7 @@
   --ff-body:    'Lato', sans-serif;
 }
  
-/* ─── Reset & Base ─── */
+/* Reset & Base */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  
 html { scroll-behavior: smooth; }
@@ -25,14 +25,14 @@ body {
   line-height: 1.75;
 }
  
-/* ─── Layout ─── */
+/* Layout */
 .container {
   max-width: 860px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
  
-/* ─── Header ─── */
+/* Header */
 header {
   background-color: var(--secondary);
   color: #FDF6EE;
@@ -60,7 +60,7 @@ header p {
   font-weight: 300;
 }
  
-/* ─── Navigation ─── */
+/* Navigation */
 nav {
   background-color: var(--secondary);
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -83,7 +83,7 @@ nav a {
  
 nav a:hover { color: var(--primary); }
  
-/* ─── Sections ─── */
+/* Sections */
 section {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border);
@@ -121,7 +121,7 @@ p:last-child { margin-bottom: 0; }
   font-style: italic;
 }
  
-/* ─── Cards ─── */
+/* Cards */
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -137,7 +137,7 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 0.5rem;
 }
  
-/* ─── Color Schema ─── */
+/* Color Schema */
 .color-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
@@ -184,7 +184,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--secondary);
 }
  
-/* ─── Typography Samples ─── */
+/* Typography Samples */
 .type-sample {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -204,7 +204,7 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 0.5rem;
 }
  
-/* ─── Scenarios ─── */
+/* Scenarios */
 .scenario-list {
   list-style: none;
   margin-top: 1.25rem;
@@ -241,7 +241,7 @@ p:last-child { margin-bottom: 0; }
   text-align: center;
 }
  
-/* ─── Wireframes ─── */
+/* Wireframes */
 .wireframe-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -400,7 +400,7 @@ p:last-child { margin-bottom: 0; }
 /* Desktop nav override */
 .wf-desktop .wf-nav-links span { width: 32px; }
  
-/* ─── Footer ─── */
+/* Footer */
 footer {
   background: var(--secondary);
   color: #C9B5A8;
