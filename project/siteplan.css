@@ -183,6 +183,27 @@ p:last-child { margin-bottom: 0; }
   border-radius: 4px;
   color: var(--secondary);
 }
+
+.swatch-block.primary {
+  background: var(--primary);
+}
+
+.swatch-block.secondary {
+  background: var(--secondary);
+}
+
+.swatch-block.background {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.swatch-block.accent {
+  background: var(--accent);
+}
+
+.swatch-block.text {
+  background: var(--text);
+}
  
 /* Typography Samples */
 .type-sample {
