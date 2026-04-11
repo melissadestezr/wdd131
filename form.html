@@ -2,14 +2,14 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="auhtor" content="Melissa Destez">
   <meta name="description" content="Cats World celebrates cat culture. Find breed information, care tips, and honest product reviews from fellow cat enthusiasts." 
   <title>Product Review | Cats World</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/form.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
   <script src="scripts/form.js" defer></script>
 </head>
 <body>
@@ -65,19 +65,19 @@
         <div class="field-group">
           <label>Overall Rating <span class="req">*</span></label>
           <div class="star-rating" role="group" aria-label="Overall rating">
-            <input type="radio" id="star5" name="rating" value="5" required />
+            <input type="radio" id="star5" name="rating" value="5" required>
             <label for="star5" title="5 stars">☆</label>
  
-            <input type="radio" id="star4" name="rating" value="4" />
+            <input type="radio" id="star4" name="rating" value="4" required>
             <label for="star4" title="4 stars">☆</label>
  
-            <input type="radio" id="star3" name="rating" value="3" />
+            <input type="radio" id="star3" name="rating" value="3" required>
             <label for="star3" title="3 stars">☆</label>
  
-            <input type="radio" id="star2" name="rating" value="2" />
+            <input type="radio" id="star2" name="rating" value="2" required>
             <label for="star2" title="2 stars">☆</label>
  
-            <input type="radio" id="star1" name="rating" value="1" />
+            <input type="radio" id="star1" name="rating" value="1" required>
             <label for="star1" title="1 star">☆</label>
           </div>
           <span class="rating-hint">Select 1–5 stars</span>
@@ -94,36 +94,30 @@
           <label>Useful Features</label>
           <p class="field-hint">Select all that apply</p>
           <div class="checkbox-grid">
-            <label class="check-label">
-              <input type="checkbox" id="feat-durable" name="features" value="Durable Material" />
-              <span class="check-box"></span>
-              Durable Material
-            </label>
-            <label class="check-label">
-              <input type="checkbox" id="feat-easy" name="features" value="Easy to Clean" />
-              <span class="check-box"></span>
-              Easy to Clean
-            </label>
-            <label class="check-label">
-              <input type="checkbox" id="feat-safe" name="features" value="Cat Safe" />
-              <span class="check-box"></span>
-              Cat Safe
-            </label>
-            <label class="check-label">
-              <input type="checkbox" id="feat-compact" name="features" value="Compact Design" />
-              <span class="check-box"></span>
-              Compact Design
-            </label>
-            <label class="check-label">
-              <input type="checkbox" id="feat-value" name="features" value="Good Value" />
-              <span class="check-box"></span>
-              Good Value
-            </label>
-            <label class="check-label">
-              <input type="checkbox" id="feat-assembly" name="features" value="Easy Assembly" />
-              <span class="check-box"></span>
-              Easy Assembly
-            </label>
+            <div class="check-item">
+              <input type="checkbox" id="feat-durable" name="features" value="Durable Material">
+              <label for="feat-durable">Durable Material</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="feat-easy" name="features" value="Easy to Clean">
+              <label for="feat-easy">Easy to Clean</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="feat-safe" name="features" value="Cat Safe">
+              <label for="feat-safe">Cat Safe</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="feat-compact" name="features" value="Compact Design">
+              <label for="feat-compact">Compact Design</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="feat-value" name="features" value="Good Value">
+              <label for="feat-value">Good Value</label>
+            </div>
+            <div class="check-item">
+              <input type="checkbox" id="feat-assembly" name="features" value="Easy Assembly">
+              <label for="feat-assembly">Easy Assembly</label>
+            </div>
           </div>
         </div>
  
@@ -152,7 +146,5 @@
         <p>©<span id="currentyear"></span> ⭐ Melissa Destez ⭐ São Paulo, Brazil </p>
         <p id="lastModified"></p>
     </footer>
- 
-  <script src="scripts/form.js"></script>
 </body>
 </html>
