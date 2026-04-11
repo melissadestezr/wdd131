@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Submitted | Cats World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <span class="logo-icon">
+            <svg width="90" height="90" viewBox="230 40 220 260" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="340" cy="188" r="110" fill="#D97B4A"/>
+                <polygon points="278,100 318,90 262,42" fill="#D97B4A"/>
+                <polygon points="402,100 362,90 418,42" fill="#D97B4A"/>
+                <path d="M340,192 C337,187 328,187 328,195 C328,201 340,210 340,210 C340,210 352,201 352,195 C352,187 343,187 340,192Z" fill="#C4623A"/>
+                <line x1="196" y1="194" x2="322" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="192" y1="210" x2="322" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="484" y1="194" x2="358" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="488" y1="210" x2="358" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+        </span>
+        <div>
+          <span class="logo-title">Cats World</span>
+          <span class="logo-sub">Breeds · Care · Culture</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="form.html">Review</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+    <section class="hero-band">
+      <h1>Review <span class="accent">Submitted!</span></h1>
+      <p class="hero-sub">Thank you for helping the Cats World community</p>
+    </section>
+ 
+    <div class="confirm-wrap">
+      <div class="confirm-card">
+        <span class="confirm-icon">✅</span>
+        <h2 class="confirm-title">Thank You for Your Review!</h2>
+        <p class="confirm-sub">Your feedback helps fellow cat lovers make better choices.</p>
+ 
+        <table class="summary-table">
+          <thead>
+            <tr>
+              <th class="label-cell">Field</th>
+              <th>Your Response</th>
+            </tr>
+          </thead>
+          <tbody id="summaryBody">
+          </tbody>
+        </table>
+ 
+        <div class="counter-section">
+          <p class="counter-label">Total Reviews Submitted</p>
+          <p class="counter-number" id="reviewCount">0</p>
+          <p class="counter-sub">from this device</p>
+        </div>
+ 
+        <a href="form.html" class="btn-back">← Submit Another Review</a>
+      </div>
+    </div>
+  </main>
+ 
+  <footer>
+    <div class="footer-inner">
+      <p>WDD 131 · Dynamic Web Fundamentals · BYU-Idaho</p>
+      <p>&copy; <span id="year"></span> Cats World | <span id="lastModified"></span></p>
+    </div>
+  </footer>
+ 
+  <script src="scripts/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Review | Cats World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="form.css" />
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <span class="logo-icon">
+            <svg width="90" height="90" viewBox="230 40 220 260" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="340" cy="188" r="110" fill="#D97B4A"/>
+                <polygon points="278,100 318,90 262,42" fill="#D97B4A"/>
+                <polygon points="402,100 362,90 418,42" fill="#D97B4A"/>
+                <path d="M340,192 C337,187 328,187 328,195 C328,201 340,210 340,210 C340,210 352,201 352,195 C352,187 343,187 340,192Z" fill="#C4623A"/>
+                <line x1="196" y1="194" x2="322" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="192" y1="210" x2="322" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="484" y1="194" x2="358" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="488" y1="210" x2="358" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+        </span>
+        <div>
+          <span class="logo-title">Cats World</span>
+          <span class="logo-sub">Breeds · Care · Culture</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="form.html" class="active">Review</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+    <section class="hero-band">
+      <h1>Submit a <span class="accent">Product Review</span></h1>
+      <p class="hero-sub">Share your experience and help fellow cat lovers find the best products</p>
+    </section>
+ 
+    <div class="form-container">
+      <form method="get" action="review.html" id="reviewForm">
+ 
+        <!-- Product Name -->
+        <div class="field-group">
+          <label for="productName">Product Name <span class="req">*</span></label>
+          <div class="select-wrap">
+            <select id="productName" name="productName" required>
+              <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            <span class="select-arrow">▼</span>
+          </div>
+        </div>
+ 
+        <!-- Overall Rating -->
+        <div class="field-group">
+          <label>Overall Rating <span class="req">*</span></label>
+          <div class="star-rating" role="group" aria-label="Overall rating">
+            <input type="radio" id="star5" name="rating" value="5" required />
+            <label for="star5" title="5 stars">☆</label>
+ 
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 stars">☆</label>
+ 
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 stars">☆</label>
+ 
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 stars">☆</label>
+ 
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 star">☆</label>
+          </div>
+          <span class="rating-hint">Select 1–5 stars</span>
+        </div>
+ 
+        <!-- Date of Installation -->
+        <div class="field-group">
+          <label for="installDate">Date of Installation <span class="req">*</span></label>
+          <input type="date" id="installDate" name="installDate" required />
+        </div>
+ 
+        <!-- Useful Features -->
+        <div class="field-group">
+          <label>Useful Features</label>
+          <p class="field-hint">Select all that apply</p>
+          <div class="checkbox-grid">
+            <label class="check-label">
+              <input type="checkbox" id="feat-durable" name="features" value="Durable Material" />
+              <span class="check-box"></span>
+              Durable Material
+            </label>
+            <label class="check-label">
+              <input type="checkbox" id="feat-easy" name="features" value="Easy to Clean" />
+              <span class="check-box"></span>
+              Easy to Clean
+            </label>
+            <label class="check-label">
+              <input type="checkbox" id="feat-safe" name="features" value="Cat Safe" />
+              <span class="check-box"></span>
+              Cat Safe
+            </label>
+            <label class="check-label">
+              <input type="checkbox" id="feat-compact" name="features" value="Compact Design" />
+              <span class="check-box"></span>
+              Compact Design
+            </label>
+            <label class="check-label">
+              <input type="checkbox" id="feat-value" name="features" value="Good Value" />
+              <span class="check-box"></span>
+              Good Value
+            </label>
+            <label class="check-label">
+              <input type="checkbox" id="feat-assembly" name="features" value="Easy Assembly" />
+              <span class="check-box"></span>
+              Easy Assembly
+            </label>
+          </div>
+        </div>
+ 
+        <!-- Written Review -->
+        <div class="field-group">
+          <label for="writtenReview">Written Review</label>
+          <textarea id="writtenReview" name="writtenReview" rows="5" placeholder="Tell us about your experience with this product..."></textarea>
+        </div>
+ 
+        <!-- User Name -->
+        <div class="field-group">
+          <label for="userName">Your Name <span class="optional">(optional)</span></label>
+          <input type="text" id="userName" name="userName" placeholder="e.g. Jane Smith" />
+        </div>
+ 
+        <!-- Submit -->
+        <div class="field-group submit-group">
+          <input type="submit" value="Submit Review" class="btn-submit" />
+        </div>
+ 
+      </form>
+    </div>
+    </main>
+ 
+    <footer>
+        <p>©<span id="currentyear"></span> ⭐ Melissa Destez ⭐ São Paulo, Brazil </p>
+        <p id="lastModified"></p>
+    </footer>
+ 
+  <script src="scripts/form.js"></script>
+</body>
+</html>
