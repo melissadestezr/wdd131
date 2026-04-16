@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Purrfect Companions. Submit your cat's photo, ask a question, or share your story with our community." />
+  <title>Contact Us | Cats World</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Purrfect Companions Home">
+        <span class="logo-icon">
+            <svg width="90" height="90" viewBox="230 40 220 260" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="340" cy="188" r="110" fill="#D97B4A"/>
+                <polygon points="278,100 318,90 262,42" fill="#D97B4A"/>
+                <polygon points="402,100 362,90 418,42" fill="#D97B4A"/>
+                <path d="M340,192 C337,187 328,187 328,195 C328,201 340,210 340,210 C340,210 352,201 352,195 C352,187 343,187 340,192Z" fill="#C4623A"/>
+                <line x1="196" y1="194" x2="322" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="192" y1="210" x2="322" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="484" y1="194" x2="358" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="488" y1="210" x2="358" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+        </span>
+        <span class="logo-text">Purrfect<br><em>Companions</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="breeds.html">Breeds</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+ 
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get in <em>Touch</em></h1>
+        <p>Submit your cat's photo, ask a question, or share a story with our community.</p>
+      </div>
+    </section>
+ 
+    <section class="contact-section">
+      <div class="container contact-container">
+ 
+        <!-- Form -->
+        <div class="form-wrapper">
+          <h2>Send Us a Message</h2>
+ 
+          <div class="form-success" id="formSuccess" style="display:none" role="alert">
+            <span aria-hidden="true">🐾</span>
+            <div>
+              <strong id="successName">Hello!</strong>
+              <p id="successMsg">Your message has been received. We'll get back to you soon!</p>
+            </div>
+          </div>
+ 
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Jane Smith"
+                required
+                autocomplete="name"
+                aria-required="true"
+              />
+              <span class="field-error" id="nameError" role="alert"></span>
+            </div>
+ 
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                required
+                autocomplete="email"
+                aria-required="true"
+              />
+              <span class="field-error" id="emailError" role="alert"></span>
+            </div>
+ 
+            <div class="form-group">
+              <label for="catName">Your Cat's Name</label>
+              <input
+                type="text"
+                id="catName"
+                name="catName"
+                placeholder="Whiskers"
+                autocomplete="off"
+              />
+            </div>
+ 
+            <div class="form-group">
+              <label for="subject">Subject <span aria-hidden="true">*</span></label>
+              <select id="subject" name="subject" required aria-required="true">
+                <option value="">Select a subject</option>
+                <option value="question">Ask a question</option>
+                <option value="photo">Submit my cat's photo</option>
+                <option value="breed">Breed recommendation</option>
+                <option value="care">Care tip</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="field-error" id="subjectError" role="alert"></span>
+            </div>
+ 
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell us about your cat or ask your question..."
+                required
+                aria-required="true"
+              ></textarea>
+              <span class="field-error" id="messageError" role="alert"></span>
+            </div>
+ 
+            <div class="form-group form-check">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label for="newsletter">Subscribe to our monthly cat care newsletter</label>
+            </div>
+ 
+            <button type="submit" class="btn-primary btn-block">Send Message 🐾</button>
+          </form>
+        </div>
+ 
+        <!-- Sidebar info -->
+        <aside class="contact-sidebar">
+          <h2>Why Contact Us?</h2>
+          <ul class="contact-reasons">
+            <li>
+              <span aria-hidden="true">📸</span>
+              <div>
+                <strong>Share your cat's photo</strong>
+                <p>We feature community cats on our social pages every week.</p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">❓</span>
+              <div>
+                <strong>Ask a cat question</strong>
+                <p>Behavior, health, nutrition — our community loves to help.</p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">🐱</span>
+              <div>
+                <strong>Breed recommendation</strong>
+                <p>Tell us your lifestyle and we'll suggest the best match.</p>
+              </div>
+            </li>
+          </ul>
+ 
+          <div class="last-submission" id="lastSubmission" style="display:none">
+            <h3>Your Last Message</h3>
+            <p id="lastSubmissionText"></p>
+          </div>
+        </aside>
+ 
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="logo-text footer-logo">Purrfect <em>Companions</em></span>
+      <p class="footer-copy">&copy; <span id="footerYear"></span> Purrfect Companions. Educational use only.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="contact.html">Contact</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </footer>
+ 
+  <script src="scripts/main.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>

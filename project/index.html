@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Purrfect Companions – Discover fascinating cat facts, explore breeds, and learn expert care tips for your feline friend.">
+  <title>Cats Worlds | Cat Facts &amp; Breeds</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script scr="scripts/main.js" defer></script>
+</head>
+<body>
+ 
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">
+          <svg width="90" height="90" viewBox="230 40 220 260" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="340" cy="188" r="110" fill="#D97B4A"/>
+            <polygon points="278,100 318,90 262,42" fill="#D97B4A"/>
+            <polygon points="402,100 362,90 418,42" fill="#D97B4A"/>
+            <path d="M340,192 C337,187 328,187 328,195 C328,201 340,210 340,210 C340,210 352,201 352,195 C352,187 343,187 340,192Z" fill="#C4623A"/>
+            <line x1="196" y1="194" x2="322" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="192" y1="210" x2="322" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="484" y1="194" x2="358" y2="200" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="488" y1="210" x2="358" y2="208" stroke="#C4623A" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text"><em>Cats World</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="breeds.html">Breeds</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+ 
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Welcome to the world of cats</p>
+        <h1>Curious, Elegant &amp;<br><em>Purrfect Companions!</em></h1>
+        <p class="hero-sub">Explore breeds, discover fun facts, and become the best companion your feline deserves.</p>
+        <a href="breeds.html" class="btn-primary">Explore Breeds</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="cat-deco">
+          <img src="images/ruby.jpeg" alt="grey cat"  class="img-rounded">
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Dynamic Fun Facts -->
+    <section class="facts-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Did You Know?</h2>
+          <p>A new feline fact every time you visit</p>
+        </div>
+        <div class="fact-card" id="factCard" role="region" aria-live="polite" aria-label="Fun cat fact">
+          <blockquote id="factText" class="fact-text">Loading a fun fact...</blockquote>
+          <span class="fact-number" id="factNumber">1 / 10</span>
+        </div>
+        <div class="fact-controls">
+          <button class="btn-outline" id="prevFact" aria-label="Previous fact">← Previous</button>
+          <button class="btn-primary" id="nextFact" aria-label="Next fact">Next Fact →</button>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Why Cats Section -->
+    <section class="why-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Cats?</h2>
+          <p>A few compelling reasons to love them even more</p>
+        </div>
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="why-icon" aria-hidden="true">🧠</div>
+            <h3>Highly Intelligent</h3>
+            <p>Cats have around 300 million neurons in their cerebral cortex — far more than dogs. They solve problems, remember routines, and adapt to new environments quickly.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon" aria-hidden="true">❤️</div>
+            <h3>Great Companions</h3>
+            <p>Studies show that owning a cat reduces stress and lowers the risk of heart disease. Their purring vibrates at a frequency known to promote healing.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon" aria-hidden="true">🌙</div>
+            <h3>Low Maintenance</h3>
+            <p>Cats are independent by nature. They self-groom, use litter boxes instinctively, and are perfectly content entertaining themselves — ideal for busy lifestyles.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon" aria-hidden="true">🎭</div>
+            <h3>Unique Personalities</h3>
+            <p>Every cat has a distinct personality shaped by breed, upbringing, and environment. From playful and affectionate to aloof and mysterious — there is a cat for everyone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Curiosities Strip -->
+    <section class="curiosities-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Feline Curiosities</h2>
+          <p>Fascinating things you might not know about cats</p>
+        </div>
+        <div class="curiosity-list">
+          <div class="curiosity-item">
+            <span class="curiosity-num">01</span>
+            <div>
+              <h3>Cats sleep 12–16 hours a day</h3>
+              <p>As natural predators, cats conserve energy for hunting. Even domestic cats maintain this instinct, napping throughout the day in short cycles.</p>
+            </div>
+          </div>
+          <div class="curiosity-item">
+            <span class="curiosity-num">02</span>
+            <div>
+              <h3>A group of cats is called a clowder</h3>
+              <p>While cats are famously independent, feral cats often form colonies with complex social structures, hierarchies, and cooperative cub-rearing behaviors.</p>
+            </div>
+          </div>
+          <div class="curiosity-item">
+            <span class="curiosity-num">03</span>
+            <div>
+              <h3>Cats can make over 100 vocal sounds</h3>
+              <p>Dogs can make about 10 sounds. Cats, however, have developed a rich vocal repertoire specifically to communicate with humans — including the manipulative "solicitation purr."</p>
+            </div>
+          </div>
+          <div class="curiosity-item">
+            <span class="curiosity-num">04</span>
+            <div>
+              <h3>Cats always land on their feet</h3>
+              <p>This is mostly true. Cats have a flexible backbone and no functional clavicle, allowing them to perform a "righting reflex" mid-fall to orient themselves feet-first.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to find your perfect breed?</h2>
+        <p>Browse our catalog of cat breeds and find the one that matches your lifestyle.</p>
+        <a href="breeds.html" class="btn-primary">View All Breeds</a>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="logo-text footer-logo">Purrfect <em>Companions</em></span>
+      <p class="footer-copy">&copy; <span id="footerYear"></span> Purrfect Companions. Educational use only.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="contact.html">Contact</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </footer>
+  
+</body>
+</html>
