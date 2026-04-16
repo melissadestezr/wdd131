@@ -1,8 +1,3 @@
-// =============================================
-// Purrfect Companions – contact.js
-// Form validation, submission, localStorage
-// =============================================
-
 const form           = document.getElementById('contactForm');
 const formSuccess    = document.getElementById('formSuccess');
 const successName    = document.getElementById('successName');
