@@ -8,7 +8,7 @@ const breeds = [
   {
     id: "persian",
     name: "Persian",
-    emoji: "🐱",
+    img: "images/persian.jpg",
     size: "medium",
     temperament: "calm",
     origin: "Iran",
@@ -19,7 +19,7 @@ const breeds = [
   {
     id: "siamese",
     name: "Siamese",
-    emoji: "🙀",
+    img: "images/siamese.jpg",
     size: "medium",
     temperament: "playful",
     origin: "Thailand",
@@ -30,7 +30,7 @@ const breeds = [
   {
     id: "maine-coon",
     name: "Maine Coon",
-    emoji: "🦁",
+    img: "images/maine-coon.jpg",
     size: "large",
     temperament: "affectionate",
     origin: "United States",
@@ -39,9 +39,9 @@ const breeds = [
     traits: { affection: 90, energy: 70, grooming: 70, intelligence: 85 }
   },
   {
-    id: "british-shorthair",
-    name: "British Shorthair",
-    emoji: "😸",
+    id: "domestic-shorthair",
+    name: "Domestic Shorthair",
+    img: "images/domestic-shorthair.jpg",
     size: "large",
     temperament: "calm",
     origin: "United Kingdom",
@@ -52,7 +52,7 @@ const breeds = [
   {
     id: "bengal",
     name: "Bengal",
-    emoji: "🐯",
+    img: "images/bengal.jpg",
     size: "medium",
     temperament: "playful",
     origin: "United States",
@@ -63,7 +63,7 @@ const breeds = [
   {
     id: "ragdoll",
     name: "Ragdoll",
-    emoji: "😻",
+    img: "images/ragdoll.jpg",
     size: "large",
     temperament: "affectionate",
     origin: "United States",
@@ -74,7 +74,7 @@ const breeds = [
   {
     id: "scottish-fold",
     name: "Scottish Fold",
-    emoji: "🐱",
+    img: "images/scottish-fold.jpg",
     size: "small",
     temperament: "calm",
     origin: "Scotland",
@@ -85,7 +85,7 @@ const breeds = [
   {
     id: "abyssinian",
     name: "Abyssinian",
-    emoji: "🦊",
+    img: "images/abyssinian.jpg",
     size: "small",
     temperament: "playful",
     origin: "Ethiopia",
@@ -96,7 +96,7 @@ const breeds = [
   {
     id: "sphynx",
     name: "Sphynx",
-    emoji: "👁️",
+    img: "images/sphynx.jpg",
     size: "medium",
     temperament: "affectionate",
     origin: "Canada",
@@ -107,7 +107,7 @@ const breeds = [
   {
     id: "norwegian-forest",
     name: "Norwegian Forest Cat",
-    emoji: "🌲",
+    img: "images/norwegian-forest.jpg",
     size: "large",
     temperament: "independent",
     origin: "Norway",
@@ -118,7 +118,7 @@ const breeds = [
   {
     id: "russian-blue",
     name: "Russian Blue",
-    emoji: "💙",
+    img: "images/russian-blue.jpg",
     size: "medium",
     temperament: "independent",
     origin: "Russia",
@@ -129,7 +129,7 @@ const breeds = [
   {
     id: "devon-rex",
     name: "Devon Rex",
-    emoji: "🐭",
+    img: "images/devon-rex.jpg",
     size: "small",
     temperament: "playful",
     origin: "United Kingdom",
@@ -187,7 +187,7 @@ function createBreedCard(breed) {
 
   card.innerHTML = `
     <div class="breed-card-header">
-      <span class="breed-emoji" aria-label="${breed.name} illustration">${breed.emoji}</span>
+      <img src="${breed.img}" alt="${breed.name}" class="breed-img" loading="lazy">
       <button
         class="fav-btn"
         data-id="${breed.id}"
@@ -197,8 +197,7 @@ function createBreedCard(breed) {
     </div>
     <div class="breed-card-body">
       <h3>${breed.name}</h3>
-      <p class="breed-origin" style="font-size:0.8rem;color:var(--clr-text-muted);margin-bottom:0">${breed.origin} · ${breed.lifespan}</p>
-      <div class="breed-meta">
+      <p class="breed-origin" style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0">
         <span class="tag">${breed.size}</span>
         <span class="tag">${breed.temperament}</span>
       </div>
@@ -295,7 +294,7 @@ function renderFavorites() {
     if (!breed) return '';
     return `
       <span class="fav-tag">
-        ${breed.emoji} ${breed.name}
+        ${breed.name}
         <button aria-label="Remove ${breed.name} from favorites" data-remove="${breed.id}">✕</button>
       </span>
     `;
